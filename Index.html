@@ -1,33 +1,245 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Nurse Success Patient Medicine Store</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5fbff;
+      color: #17324d;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #087f8c, #0aa6a6);
+      color: white;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #087f8c;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+
+    section {
+      padding: 45px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .welcome {
+      text-align: center;
+    }
+
+    .welcome h2 {
+      color: #087f8c;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: #087f8c;
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: #e5f8f8;
+      text-align: center;
+      border-radius: 20px;
+      margin-bottom: 40px;
+    }
+
+    .contact h2 {
+      color: #087f8c;
+      margin-bottom: 15px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #087f8c;
+      color: white;
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: 30px;
+      margin: 10px 5px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #05636d;
+    }
+
+    footer {
+      background: #17324d;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Nurse Success Patient Medicine Store</h1>
 
-  <h2>Healthcare You Can Trust</h2>
+  <header>
+    <h1>🩺 Nurse Success Patient Medicine Store</h1>
+    <p>Your Trusted Partner in Health & Wellness</p>
+  </header>
 
-  <p>
-    We provide genuine medicines, health services, cosmetics and general goods.
-  </p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <h3>Our Services</h3>
-  <ul>
-    <li>Patient medicine and healthcare products</li>
-    <li>Health advice and basic health services</li>
-    <li>Cosmetics and personal care products</li>
-    <li>General goods</li>
-  </ul>
+  <section id="home" class="welcome">
+    <h2>Healthcare You Can Trust</h2>
 
-  <h3>Contact Us</h3>
-  <p>📞 08068400601</p>
-  <p>📍 3 Poles Junction, Road 7 Extension, Imo Housing, Umuguma, Owerri West, Nigeria.</p>
+    <p>
+      Welcome to Nurse Success Patient Medicine Store.
+      We provide genuine medicines, health products and healthcare services
+      with care, professionalism and attention to our customers.
+    </p>
+  </section>
 
-  <a href="tel:08068400601">Call Us</a>
-  <br><br>
-  <a href="https://wa.me/2348068400601">Chat with us on WhatsApp</a>
+  <section id="services">
+    <h2 style="text-align:center; color:#087f8c;">
+      Our Services
+    </h2>
+
+    <div class="services">
+
+      <div class="card">
+        <div class="icon">💊</div>
+        <h3>Genuine Medicines</h3>
+        <p>
+          Quality and genuine medicines and healthcare products.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🩺</div>
+        <h3>Health Services</h3>
+        <p>
+          Professional health support and basic healthcare services.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🧴</div>
+        <h3>Cosmetics</h3>
+        <p>
+          Selected beauty and personal care products.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🛍️</div>
+        <h3>General Goods</h3>
+        <p>
+          Convenient access to useful everyday products.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>
+      📍 3 Poles Junction, Road 7 Extension,<br>
+      Imo Housing, Umuguma, Owerri West, Imo State, Nigeria.
+    </p>
+
+    <p style="margin-top:15px;">
+      📞 <strong>08068400601</strong>
+    </p>
+
+    <a class="button" href="tel:08068400601">
+      📞 Call Us
+    </a>
+
+    <a class="button"
+       href="https://wa.me/2348068400601?text=Hello%20Nurse%20Success%20Patient%20Medicine%20Store%2C%20I%20would%20like%20to%20make%20an%20enquiry.">
+      💬 WhatsApp Us
+    </a>
+
+  </section>
+
+  <footer>
+    <p><strong>Nurse Success Patient Medicine Store</strong></p>
+    <p>Healthcare You Can Trust ❤️</p>
+    <p>© 2026 Nurse Success Patient Medicine Store</p>
+  </footer>
+
 </body>
 </html>
